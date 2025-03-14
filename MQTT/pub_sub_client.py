@@ -1,4 +1,4 @@
- # Testscript for publish og subscribe i mqtt
+# Testscript for publish og subscribe i mqtt
 
 import paho.mqtt.publish as publish
 import paho.mqtt.client as mqtt
@@ -14,13 +14,13 @@ def on_connect(client, userdata, flags, reason_code, properties):
     # reconnect then subscriptions will be renewed.
     client.subscribe("testTopic")
 
- # The callback for when a PUBLISH message is received from the server.
+# The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
     lst.append(msg.payload.decode('UTF-8'))
     print(lst[0])
     print(msg.topic+" "+str(msg.payload))
 
- # Funksjon for bulisering:
+# Funksjon for bulisering:
 payload1 = u"Hei verden"
 
 def publisher(payload1):
