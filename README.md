@@ -2,7 +2,7 @@
 Repository med fleksibel kode og funksjoner som er skrevet for å være enkle og lett anvennelige til andre prosjekter. 
 
 ## Nyttige MQTT-kommandoer:
-## Systemcontrol for MQTT:
+# Systemcontrol for MQTT:
 Disse kommandoene kan kjøres i Linux CLI for å starte/stoppe/sjekke statusen til MQTT-broker.
   * systemctl status mosquitto.service
   * systemctl start mosquitto.service
