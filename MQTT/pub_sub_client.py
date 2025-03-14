@@ -37,6 +37,3 @@ payload = u'Hei verden, funker dette?'
 # publisher
 for i in range(5):
     publisher(payload)
-    #publish.single(topic, payload, hostname="84.214.173.115")
-#Evt bruke "85.214.173.115" dersom man ikke er på samme nettverk
-#mqttc.connect("192.168.1.112", 1883, 60)
