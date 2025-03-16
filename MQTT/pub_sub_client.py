@@ -7,22 +7,21 @@ lst = []
 # Hostname: Min laptop
 hostname = "172.22.224.1"
 
-# The callback for when the client receives a CONNACK response from the server.
+# Callback for å koble til broker
 def on_connect(client, userdata, flags, reason_code, properties):
     print(f"Connected with result code {reason_code}")
-    # Subscribing in on_connect() means that if we lose the connection and
-    # reconnect then subscriptions will be renewed.
     client.subscribe("testTopic")
 
-# The callback for when a PUBLISH message is received from the server.
+# Callback ved mottatt melding, dekodes og printes
 def on_message(client, userdata, msg):
     lst.append(msg.payload.decode('UTF-8'))
     print(lst[0])
     print(msg.topic+" "+str(msg.payload))
 
-# Funksjon for bulisering:
+# Eksempel payload
 payload1 = u"Hei verden"
 
+# publiseringsfunksjon: 
 def publisher(payload1):
     publish.single("testTopic", payload1, hostname = hostname)
     
