@@ -1,5 +1,5 @@
 # Vault
-Repository med fleksibel kode og funksjoner som er skrevet for å være enkle og lett anvennelige til andre prosjekter. 
+Repository med fleksibel kode og funksjoner som er skrevet for å være enkle og lett anvennelige til andre prosjekter. Inneholder også en rekke nyttige og ganske "basic" kommandoer til Raspberry Pi.
 
 # Raspberry pi:
 ## SSH:
