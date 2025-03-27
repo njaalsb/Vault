@@ -3,7 +3,7 @@ import paho.mqtt.publish as publish
 import time
 
 # MQTT Broker adresse
-hostname = "172.22.234.31"
+hostname = "127.0.0.1"
 topic = "Topic"
 
 # Callback ved vellykket tilkobling

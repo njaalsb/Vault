@@ -5,7 +5,7 @@ import paho.mqtt.client as mqtt
 lst = []
 
 # Hostname: Min laptop
-hostname = "172.22.224.1"
+hostname = "127.0.0.1"
 
 # Callback for å koble til broker
 def on_connect(client, userdata, flags, reason_code, properties):
