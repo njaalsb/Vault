@@ -1,6 +1,11 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
+
+/*
+ * Kode for ESP32 som MQTT klient, kun for publisering.
+ */
+
 // Wi-Fi detaljer
 const char* ssid = "NTNU-IOT";
 const char* password = "";
