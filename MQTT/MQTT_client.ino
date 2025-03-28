@@ -3,16 +3,16 @@
 
 
 /*
- * Kode for ESP32 som MQTT klient, kun for publisering.
+ * Kode for ESP32 som MQTT klient, kun for publisering. Koden er blokkerende, ikke optimalisert, men lesbar og fungerende.
  */
 
 // Wi-Fi detaljer
-const char* ssid = "NTNU-IOT";
-const char* password = "";
+const char* ssid = "**********";
+const char* password = "******";
 
 // MQTT Broker detaljer
 const char* mqtt_broker = "127.0.0.1";
-const int mqtt_port = 1883; // Standard MQTT-port
+const int mqtt_port = 1883; 
 const char* mqtt_topic = "test/topic";
 
 // WiFi og MQTT klient
