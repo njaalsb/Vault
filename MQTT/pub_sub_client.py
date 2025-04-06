@@ -1,4 +1,5 @@
 # Testscript for publish og subscribe i mqtt
+# Litt usikker på om denne koden fungerer helt som den skal
 
 import paho.mqtt.publish as publish
 import paho.mqtt.client as mqtt
